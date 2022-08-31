@@ -1,0 +1,248 @@
+body{
+    font-family: 'Barlow Semi Condensed';
+    background-color: transparent;
+    place-items: center;
+    height: 60vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    
+}
+footer {
+    display: flex;
+    align-self: end; /* The trick */
+}
+
+   
+
+
+.grid-container{
+    
+    max-height: 100vh;
+    margin: 40px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 310px, 270px;
+    padding: 50px;
+    grid-gap: 2rem;
+    margin: auto;
+    grid-template-areas: "daniel daniel jonathan kira"
+                        "jeanette patrick patrick kira"  ;
+    width: 80%;                    
+    box-shadow: 0px 0px 10px -1px rgba(161, 158, 158, 0.31);
+    border-radius: 9px; 
+    background-color: hsl(210, 46%, 95%);
+}
+
+.daniel{
+    background:url(images/bg-pattern-quotation.svg)right 8px no-repeat , hsl(263, 55%, 52%);
+    grid-area: daniel;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px -1px rgba(161, 158, 158, 0.31);
+    padding: 32px;
+    
+}
+.jonathan{
+    background-color: hsl(217, 19%, 35%);
+    grid-area: jonathan;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px -1px rgba(161, 158, 158, 0.31);
+    padding: 32px;
+    
+    
+    
+}
+.jeanette{
+    background-color: hsl(0, 0%, 100%);
+    grid-area: jeanette;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px -1px rgba(161, 158, 158, 0.31);
+    padding: 32px;
+    
+}
+.patrick{
+    background-color: hsl(219, 29%, 14%);
+    grid-area: patrick;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px -1px rgba(161, 158, 158, 0.31);
+    color: aliceblue;
+    padding: 32px;
+    
+}
+.kira{
+    background-color: hsl(0, 0%, 100%);;
+    grid-area: kira;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px -1px rgba(161, 158, 158, 0.31);
+    padding: 32px;
+}
+
+.daniel img{
+    border-radius: 50%;
+    border: white solid 1px;
+    margin: 5px;
+    width: 7%;
+    height: 35px;
+   
+}
+.jonathan img{
+    border-radius: 50%;
+    border: white solid 1px;
+    margin: 5px;
+    width: 15.8%;
+    height: 34px;
+
+}
+.jeanette img{
+    border-radius: 50%;
+    border: grey solid 1px;
+    margin: 5px;
+    width: 15.8%;
+    height: 34px;
+}
+.patrick img{
+    border-radius: 50%;
+    border: white solid 1px;
+    margin: 5px;
+    width: 7%;
+    height: 35px;
+}
+.kira img{
+    border-radius: 50%;
+    border: grey solid 1px;
+    margin: 5px;
+    width: 15.8%;
+    height: 34px;
+}
+
+.verified{
+    opacity: 50%;
+    
+}
+
+.flex{
+    display: flex;
+}
+
+.inner-flex{
+    padding-top: 8px;
+}
+
+.inner-flex h4{
+    padding-top: 2px;
+    margin: 0px;
+    padding-left: .8rem;
+    color: white;
+}
+.black h4{
+    color: black;
+}
+.white{
+    color: white;
+}
+.main-para{
+    font-size: 22px;
+    color: white;
+    padding: 10px 5px 3px 5px ;
+    font-weight: 600;
+    
+}
+.main-para1{
+    font-size: 22px;
+    color: black;
+    padding: 10px 5px 3px 5px ;
+    font-weight: 600;
+   
+}
+.black {
+    font-size: medium;
+    opacity: 70%;
+    padding: 5px 5px 1px 5px;
+    margin-bottom: 0;
+}
+.white {
+    font-size: medium;
+    opacity: 70%;
+    padding: 5px 5px 1px 5px;
+    margin-bottom: 0;
+}
+.attribution{
+    font-weight: bolder;
+}
+
+@media only screen and (max-width:550px) {
+    .grid-container{
+        max-height: none;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr .5fr .5fr 1fr 1.2fr;
+        grid-template-areas: "daniel" 
+                              "jonathan "
+                              "jeanette"
+                              "patrick"
+                              "kira"
+                              ;
+    }
+
+    .daniel{
+        grid-area: daniel;
+        padding: 25px;
+    }
+
+    .jonathan{
+        grid-area: jonathan;
+        padding: 25px;
+    }
+    .jeanette{
+        grid-area: jeanette;
+        padding: 25px;
+    }
+    .patrick{
+        grid-area: patrick;
+        padding: 25px;
+    }
+    .kira{
+        grid-area: kira;
+        padding: 25px;
+    }
+    .daniel img{
+        width: 10%;
+        height: 30px;
+    }
+    .jonathan img{
+        width: 10%;
+        height: 30px;
+    
+    }
+    .jeanette img{
+        
+        width: 10%;
+        height: 30px;
+    }
+    .patrick img{
+     
+        width: 10%;
+        height: 30px;
+    }
+    .kira img{
+        width: 10%;
+        height: 30px;
+    }
+    .main-para{
+        
+        font-size: 24px;
+        padding: 9px 4px 2px 4px ;
+        font-weight: 550;
+        
+    }
+    .main-para1{
+       
+        font-size: 24px;
+        padding: 9px 4px 2px 4px ;
+        font-weight: 550;
+       
+    }
+    
+}
